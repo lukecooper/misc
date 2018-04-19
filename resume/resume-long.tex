@@ -14,6 +14,9 @@
 \newcolumntype{R}{p{0.8\textwidth}}
 \newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
 
+% remove extra white space around longtables
+\setlength{\LTpre}{4pt}
+
 \def\Cplusplus{C{}\texttt{++}}
 \def\Csharp{C{}\texttt{\#}}
 
@@ -43,13 +46,13 @@ My development experience ranges from 3D games and simulations, to highly scalab
 I am looking for a role in which I can use my experience and passion for learning in order to solve interesting and challenging programming problems.
 
 \section*{Technical Knowledge}
-\begin{tabular}{L!{\VRule}R}
+\begin{longtable}{L!{\VRule}R}
 Languages&{\Csharp}, Java, TypeScript/JavaScript, Clojure, {\Cplusplus}, C, SQL, Ruby, Python. \\ \\
 
 Frameworks/ APIs&Node.js, AngularJS, jQuery, Unity3D, Microsoft .Net, Ring/Compojure, Java SE, Java EE, Spring, Nintendo RVL SDK, Microsoft X360 XDK, SCEE SDK.\\ \\
 
 Platforms&Linux, Windows, Amazon Web Services, Sony PlayStation 2/3, Nintendo GameCube/Wii, Microsoft Xbox/Xbox 360.
-\end{tabular}
+\end{longtable}
 
 \section*{Professional Experience}
 \begin{longtable}{L!{\VRule}R}
@@ -133,16 +136,16 @@ Platforms&Linux, Windows, Amazon Web Services, Sony PlayStation 2/3, Nintendo Ga
 \nobibliography{resume}
 
 \section*{Publications}
-\begin{tabular}{L!{\VRule}R}
+\begin{longtable}{L!{\VRule}R}
 2003&\bibentry{brown2003}\\ \\
 &Investigated a novel approach of using the theory of human visual attention to optimise polygon level of detail management in real-time 3D simulations.
-\end{tabular}
+\end{longtable}
 
 \section*{Interests}
 Cycling, the environment and the natural world, functional programming, learning.
 
 \section*{References}
-\begin{tabular}{L!{\VRule}R}\
+\begin{longtable}{L!{\VRule}R}\
 Bondi Labs&{\bf Dave MacMinn} \textperiodcentered{} \textit{Studio Director}\\
 &david.macminn@bondilabs.com\\
 &0406 522 652\\ \\
@@ -150,7 +153,7 @@ Bondi Labs&{\bf Dave MacMinn} \textperiodcentered{} \textit{Studio Director}\\
 Flight Centre&{\bf Scott Laporte} \textperiodcentered{} \textit{Former Team Leader}\\
 &scott.laporte@gmail.com\\
 &0421 128 197
-\end{tabular}
+\end{longtable}
 
 
 \end{document}
