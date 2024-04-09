@@ -14,6 +14,9 @@
 \newcolumntype{R}{p{0.8\textwidth}}
 \newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
 
+% remove extra white space around longtables
+\setlength{\LTpre}{4pt}
+
 \def\Cplusplus{C{}\texttt{++}}
 \def\Csharp{C{}\texttt{\#}}
 
@@ -33,32 +36,49 @@
 
 \section*{Objective}
 
-I am a software developer with over 15 years of diverse industry experience looking for new programming challenges. I offer experience in {\Csharp}, Java, TypeScript/JavaScript and other technologies on a mixture of client, web and embedded platforms. I also have a keen interest in learning languages and platforms, and seek to extend my experience into new areas.
+\noindent
+I am a software developer with over 20 years of diverse industry experience looking for new programming challenges. I offer experience in {\Csharp}, Java, Clojure, TypeScript/JavaScript and other technologies on a mixture of client, web and embedded platforms. I also have a keen interest in learning languages and platforms, and seek to extend my experience into new areas.
 
 \section*{Technical Knowledge}
 \begin{tabular}{L!{\VRule}R}
-Languages&{\Csharp}, Java, TypeScript/JavaScript, Clojure, {\Cplusplus}, C, SQL, Ruby, Python. \\ \\
+Languages&{\Csharp}, Java, Clojure, SQL, TypeScript/JavaScript, {\Cplusplus}, C, Ruby, Python. \\ \\
 
-Frameworks/ APIs&Node.js, AngularJS, jQuery, Unity, Microsoft .Net, Ring/Compojure, Java SE, Java EE, Spring, jQuery, Nintendo RVL SDK, Microsoft X360 XDK, SCEE SDK.\\ \\
+Frameworks/ APIs&Node.js, AngularJS, jQuery, Unity, Microsoft .Net, Ring/Compojure, Java SE, Java EE, Spring, jQuery.\\ \\
 
-Platforms&Linux, Windows, Amazon Web Services, Sony PlayStation 2/3, Nintendo GameCube/Wii, Microsoft Xbox/Xbox 360.
+Platforms&Linux, Windows, Amazon Web Services, Sony PlayStation 2/3, Nintendo GameCube/Wii, Microsoft Xbox/Xbox 360.\\ \\
+
+Technologies&PostgreSQL, MySQL, RabbitMQ, Redis.
 \end{tabular}
 
 \section*{Professional Experience}
 \begin{longtable}{L!{\VRule}R}
-2015--2018 &{\bf Bondi Labs} \textit{Programmer/Lead Programmer}\\ \\
-&Led a small team of programmers in developing the Kuube 3D Simulation Training platform used by major international companies for training employees in Workplace Health and Safety and Biosecurity Inspection. Developed the 3D Unity application for PC, iOS and WebGL and was the primary full-stack developer for the learning management web app deployed to Amazon Web Services.\\ \\
+2022--Present &{\bf Audience Republic} \textperiodcentered{} \textit{Senior Engineer/Team Lead}\\ \\
 
-&Was the sole developer responsible for implementing a 3D Virtual Refractor for the Brien Holden Vision Institute used to augment the training of optometry students both in Australia and internationally. Built both the Unity simulation and the Clojure-based supporting learning management web application.\\ \\
+&I lead part of the engineering team for Audience Republic's SaaS CRM and marketing platform for event organizers. The Vue.js frontend and Clojure backend (Postgres, RabbitMQ, Redis) power integrations, messaging, events, and more.\\ \\
 
-&Was responsible for architecting and maintaining build systems, development and deployment tools, and the cloud-based infrastructure backing for Bondi Labs' web applications, websites and other company services.\\ \\ 
+&I am responsible for the development, maintenance and ongoing operation of integrations with 20+ third-party platforms, enabling seamless data import/export. Additionally, I designed a high-performance Clojure ingestion API and optimized the email service (2M+ recipients) for faster delivery.\\ \\
 
-2011--2014 &{\bf Flight Centre Software Services} \textit{Senior Developer}\\ \\
-&Enhanced and supported a suite of corporate travel booking applications built in a mixture of enterprise Java technologies, which service over 2,500 companies throughout Australasia.\\ \\ 
+&Leading a small team, I manage sprints, user stories, and code reviews, while mentoring engineers and building the future of Audience Republic.\\ \\
 
-&Enhanced security and stability of legacy Java web applications with custom Python scripts to discover SQL injection and cross site scripting vulnerabilities.\\ \\
+2018--2022 &{\bf Queensland Department of Education} \textperiodcentered{} \textit{Analyst Programmer}\\ \\
 
-&Created a Spring/Hibernate Java web application for corporate chartered travel booking. Worked end to end on the application from schema design to jQuery/JSP front end.\\ \\
+&I developed and deployed a number of web applications for managing employee data within a large HR department handling 85,000 employees. These single-page applications leveraged Angular and .NET to interact with both Oracle and SQL Server databases.\\ \\
+
+&I built the front-end using modern tools like Angular with Typescript and ngrx/store for state management. On the backend, I developed {\Csharp} ASP.NET MVC APIs, utilizing the latest features of the language and the department's own Cloud.NET framework. This project provided me with hands-on experience with both Angular and ASP.NET MVC, along with in-depth knowledge of interacting with Oracle and SQL Server databases.\\ \\
+
+2015--2018 &{\bf Bondi Labs} \textperiodcentered{} \textit{Programmer/Lead Programmer}\\ \\
+&I led a small team of programmers in developing the Kuube 3D Simulation Training platform used by major international companies for training employees in Workplace Health and Safety and Biosecurity Inspection. I developed the 3D Unity application for PC, iOS and WebGL and was the primary full-stack developer for the learning management web app deployed to Amazon Web Services.\\ \\
+
+&I was the sole developer responsible for implementing a 3D Virtual Refractor for the Brien Holden Vision Institute used to augment the training of optometry students both in Australia and internationally. I built both the Unity simulation and the Clojure-based supporting learning management web application.\\ \\
+
+&I was responsible for architecting and maintaining build systems, development and deployment tools, and the cloud-based infrastructure backing for Bondi Labs' web applications, websites and other company services.\\ \\ 
+
+2011--2014 &{\bf Flight Centre Software Services} \textperiodcentered{} \textit{Senior Developer}\\ \\
+&I enhanced and supported a suite of corporate travel booking applications built in a mixture of enterprise Java technologies, which service over 2,500 companies throughout Australasia.\\ \\ 
+
+&I enhanced security and stability of legacy Java web applications with custom Python scripts to discover SQL injection and cross site scripting vulnerabilities.\\ \\
+
+&I created a Spring/Hibernate Java web application for corporate chartered travel booking, and worked end to end on the application from schema design to jQuery/JSP front end.\\ \\
 
 %
 % Too short to be worthy of inclusion
@@ -66,19 +86,16 @@ Platforms&Linux, Windows, Amazon Web Services, Sony PlayStation 2/3, Nintendo Ga
 %2011 &{\bf Topcon Positioning Systems} \textit{Senior Programmer}\\ \\
 %&Made enhancements in {\Cplusplus} to an MFC-based embedded heavy machinery positioning and control system used by thousands of construction companies worldwide.\\ \\
 
-2005--2011 &{\bf THQ Studio Australia} \textit{Senior Programmer}\\ \\
-&Worked as part of a small team that developed a number of console games based on major licenses which sold millions of copies internationally. Credited contributions on five published titles on the Sony PlayStation 2 and 3, Microsoft Xbox and Xbox 360, and the Nintendo GameCube and Wii.\\ \\
+2005--2011 &{\bf THQ Studio Australia} \textperiodcentered{} \textit{Programmer/Senior Programmer}\\ \\
+&I worked as part of a small team that developed a number of console games based on major licenses which sold millions of copies internationally. I have credited contributions on five published titles on the Sony PlayStation 2 and 3, Microsoft Xbox and Xbox 360, and the Nintendo GameCube and Wii.\\ \\
 
-&Designed and implemented a wide variety of game systems including cameras, save/load, profiles, user interface, character movement, navigation, front end, sound, editor and a number of complete mini games.\\ \\
-
-&Worked closely with in house clients to ensure that the delivered systems met with the stringent expectations required for publishing a successful title.\\ \\
-
-&Developed in {\Cplusplus} using proprietary and off the shelf libraries, with some PC tools implemented using the .NET framework.\\ \\
+&I designed and implemented a wide variety of game systems including cameras, save/load, profiles, user interface, character movement, navigation, front end, sound, editor and a number of complete mini games.\\ \\
 
 2003--2005 &{\bf Oracle Corporation} \textit{Applications Engineer}\\ \\
-&Made critical repairs to a troubled offline sales application originally developed in Java and VB6. The primary focus of the work was ensuring that the Excel-based application synchronised in a secure and reliable manner with the Oracle Applications database.\\ \\
+&I made critical repairs to a troubled offline sales application originally developed in Java and VB6. The primary focus of the work was ensuring that the Excel-based application synchronised in a secure and reliable manner with the Oracle Applications database.\\ \\
 
-&Made enhancements and provided technical customer support for a J2EE application that provided a desktop interface using Microsoft Excel to allow for mass data entry into Oracle Applications database tables.\\ \\
+&I made enhancements and provided technical customer support for a J2EE application that provided a desktop interface using Microsoft Excel to allow for mass data entry into Oracle Applications database tables.
+\end{longtable}
 
 %
 % Not really relevant any more
@@ -88,17 +105,16 @@ Platforms&Linux, Windows, Amazon Web Services, Sony PlayStation 2/3, Nintendo Ga
 %
 %&Wrote an MP3 decoder in {\Cplusplus} for use on the PC and Sony PlayStation 2.
 
-\end{longtable}
 
 \section*{Education}
 \begin{longtable}{L!{\VRule}R}
-2015&{\bf Bachelor of Applied Science} \textit{QUT}\\
+2015&{\bf Bachelor of Applied Science} \textperiodcentered{} \textit{QUT}\\
 &Ecology Major, Environmental Science Second Major, Graduated with Honours\\ \\
 
-2002&{\bf Bachelor of Information Technology (Honours)} \textit{QUT}\\ 
+2002&{\bf Bachelor of Information Technology (Honours)} \textperiodcentered{} \textit{QUT}\\ 
 &Graduated with First Class Honours, Awarded University Medal.\\ \\
 
-2001&{\bf Bachelor of Information Technology} \textit{QUT}\\ 
+2001&{\bf Bachelor of Information Technology} \textperiodcentered{} \textit{QUT}\\ 
 &Software Engineering Major, Graduated with Honours.
 \end{longtable}
 
@@ -106,24 +122,14 @@ Platforms&Linux, Windows, Amazon Web Services, Sony PlayStation 2/3, Nintendo Ga
 \nobibliography{resume}
 
 \section*{Publications}
-\begin{tabular}{L!{\VRule}R}
-2003&\bibentry{brown2003}\\ \\
-&Investigated a novel approach of using the theory of human visual attention to optimise polygon level of detail management in real-time 3D simulations.
-\end{tabular}
+\begin{longtable}{L!{\VRule}R}
+2003&\bibentry{brown2003}
+\end{longtable}
 
 \section*{Interests}
-Cycling, the environment and the natural world, functional programming, learning.
+The environment and the natural world, cycling, functional programming, fantasy literature, learning.
 
 \section*{References}
-\begin{tabular}{L!{\VRule}R}\
-Bondi Labs&{\bf Dave MacMinn} \textit{Former Studio Director}\\
-&dmacminn@hotmail.com\\
-&0406 522 652\\ \\
-
-Flight Centre&{\bf Scott Laporte} \textit{Former Team Leader}\\
-&scott.laporte@gmail.com\\
-&0421 128 197
-\end{tabular}
-
+Available upon request.
 
 \end{document}

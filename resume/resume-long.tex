@@ -37,34 +37,66 @@
 \section*{Objective}
 
 \noindent
-I am an experienced software developer with diverse industry exposure looking for my next programming challenge. I have over 15 years of professional experience spanning a variety of industries and technologies. I am motivated and self-sufficient, but can readily fit in to any team environment. Above all I have a passion for learning which has enabled me to excel in the many challenging roles I have held throughout my career.\\
+I am an experienced software developer with diverse industry exposure looking for my next programming challenge. I have over 20 years of professional experience spanning a variety of industries and technologies. I am motivated and self-sufficient, but can readily fit in to any team environment. Above all I have a passion for learning which has enabled me to excel in the many challenging roles I have held throughout my career.\\
 
 \noindent
-My development experience ranges from 3D games and simulations, to highly scalable multi-tier web applications. I am most familiar with the three main C-like languages, {\Cplusplus}, Java and {\Csharp}, however my more recent projects have included TypeScript/JavaScript and Clojure. I also have experience with a variety of front-end and back-end web frameworks, ORMs, messaging, caching and templating systems.\\
+My development experience ranges from 3D games and simulations, to highly scalable multi-tier web applications. I am most familiar with the three main C-like languages, {\Cplusplus}, Java and {\Csharp}, however my more recent projects have included TypeScript/JavaScript and Clojure, the latter of which has become my preferred development language. I also have experience with a variety of front-end and back-end web frameworks, ORMs, messaging, caching and templating systems.\\
 
 \noindent
-I am looking for a role in which I can use my experience and passion for learning in order to solve interesting and challenging programming problems.
+I am looking for a role in which I can use my experience and passion for learning in order to solve interesting and challenging programming problems. 
 
 \section*{Technical Knowledge}
 \begin{longtable}{L!{\VRule}R}
-Languages&{\Csharp}, Java, TypeScript/JavaScript, Clojure, {\Cplusplus}, C, SQL, Ruby, Python. \\ \\
+Languages&{\Csharp}, Java, Clojure, SQL, TypeScript/JavaScript, {\Cplusplus}, C, Ruby, Python. \\ \\
 
 Frameworks/ APIs&Node.js, AngularJS, jQuery, Unity3D, Microsoft .Net, Ring/Compojure, Java SE, Java EE, Spring, Nintendo RVL SDK, Microsoft X360 XDK, SCEE SDK.\\ \\
 
-Platforms&Linux, Windows, Amazon Web Services, Sony PlayStation 2/3, Nintendo GameCube/Wii, Microsoft Xbox/Xbox 360.
+Platforms&Linux, Windows, Amazon Web Services, Sony PlayStation 2/3, Nintendo GameCube/Wii, Microsoft Xbox/Xbox 360.\\ \\
+
+Technologies&PostgreSQL, MySQL, RabbitMQ, Redis.
 \end{longtable}
+\pagebreak
 
 \section*{Professional Experience}
 \begin{longtable}{L!{\VRule}R}
 
-2015--2018 &{\bf Bondi Labs} \textperiodcentered{} \textit{Programmer/Lead Programmer}\\ \\
-&\bf{Kuube} \textperiodcentered{} \url{kuube.bondilabs.com}\\
+2022--Present &{\bf Audience Republic} \textperiodcentered{} \textit{Senior Engineer/Team Lead}\\ \\
 
-&I led a small team of programmers in developing the Kuube 3D Simulation Training platform used for training employees in Workplace Health and Safety and Biosecurity Inspection. Kuube uses immersive 3D graphics to train and assess users in the detection and remediation of workplace hazards and biosecurity/quarantine risks.\\
+&Audience Republic provides a SaaS CRM and marketing platform tailored to event organisers and promoters. In my current role I am responsible for a number of critical components of the platform, including integrations, messaging, events, and more. I also lead a small team of engineers in developing and maintaining the product. The Audience Republic platform is a web application front end built in Vue.js, with a Clojure REST backend based on a Postgres database, with RabbitMQ for message brokering and Redis caching.\\ \\
+
+&\bf{Integrations}\\
+&I am responsible for the maintenance and operation of a suite of around 20 integrations with third party providers of ticketing, CRM, advertising and POS platforms. These integrations provide customers the ability to securely and seamlessly import their audience and ticketing data for use with Audience Republic marketing tools, and to export targeted segments of their audience data for 3rd party advertising.\\ \\
+
+&I designed and built an ingestion API in Clojure/Liberator for both internal and 3rd party use, in order to simplify the bulk import of audience and ticketing data that easily handles ingestion of millions of records, without significantly impacting the performance of the rest of the platform.\\ \\
+
+&\bf{Messaging}\\
+&I maintain and extend the existing email and SMS messaging system within Audience Republic, and ensure that all customer messages are sent successfully and have their deliverability statistics accurately calculated within a timely fashion. I implemented several critical performance improvements to the email service that saw mass email sends to 2million+ recipients decrease in processing time from 6-8 hours to 2-3 hours.\\ \\
+
+&\bf{Team Lead}\\
+&Along with my platform responsibilities, I also manage a small team of engineers to assist them in successfully developing and releasing new features across the product. My responsibilities include the typical day-to-day project managerial tasks of sprint management, user story curation and delegation, and code reviewing, as well as line management duties such as mentoring, performance reviewing and interviewing.\\ \\
+\pagebreak
+
+2018--2022 &{\bf Queensland Department of Education} \textperiodcentered{} \textit{Analyst Programmer}\\ \\
+
+&I was responsible for the implementation of a number of .NET and Angular-based web applications for managing employee occupancy and position data. These single-page applications exist within a larger ecosystem of new and established applications for the purpose of managing all aspects of human resources for the 85,000 employees within the department.\\ \\
+
+&My role was to develop the Angular front-end applications and the .NET web APIs and service layers based on detailed requirements specifications. The service layers communicated with Oracle and SQL Server databases via stored procedures. I was also responsible for preparing deployment scripts and deploying the applications to testing environments.\\ \\
+
+&The web application front-ends were modern Angular single page applications written in Typescript and used ngrx/store for state management. The choice of architecture allowed the application code to be neatly divided between state management and view components. All communication with the APIs was isolated within service layers.\\ \\
+
+&I was also responsible for the middle tier of the applications, those being standard ASP.NET MVC APIs. These were written in {\Csharp} and utilized many modern features of the language, including lambdas, attributes,
+LINQ and aspects. The APIs were split into several layers promoting internal re-use of business services, and made heavy use of the department’s own Cloud.NET framework.\\ \\
+
+&The API layers communicated with both Oracle and SQL Server databases, and as such I gained significant experience with each of these products, both in terms of standard SQL queries and their own implementations of stored procedures.\\ \\
+
+2015--2018 &{\bf Bondi Labs} \textperiodcentered{} \textit{Programmer/Lead Programmer}\\ \\
+&\bf{Kuube}\\
+
+&I led a small team of programmers in developing the Kuube 3D Simulation Training platform used for training employees in Workplace Health and Safety and Biosecurity Inspection. Kuube used immersive 3D graphics to train and assess users in the detection and remediation of workplace hazards and biosecurity/quarantine risks.\\ \\
 
 &I was involved in all aspects of the development of the Unity3D application across the three supported platforms of PC, iOS and WebGL. These included rendering, movement, cameras, UI, system design, data design and the deployment pipeline.\\ \\
 
-&I was also the primary developer of the Kuube web platform, used to manage course curricula, customers, users, licenses, app versioning and reporting of user results. Kuube web is a Node.js/Express.js web server with an AngularJS/Bootstrap front-end, backed by MySQL, Redis and S3 data stores, deployed to AWS Elastic Beanstalk. I was responsible for the schema design, system design, implementation, testing, maintenance and the deployment pipeline of the full stack of technologies behind the system.\\ \\
+&I was also the primary developer of the Kuube web platform, used to manage course curricula, customers, users, licenses, app versioning and reporting of user results. Kuube web was a Node.js/Express.js web server with an AngularJS/Bootstrap front-end, backed by MySQL, Redis and S3 data stores, deployed to AWS Elastic Beanstalk. I was responsible for the schema design, system design, implementation, testing, maintenance and the deployment pipeline of the full stack of technologies behind the system.\\ \\
 
 &\bf{Virtual Refractor} \textperiodcentered{} \url{www.virtualrefractor.com}\\
 
@@ -76,13 +108,12 @@ Platforms&Linux, Windows, Amazon Web Services, Sony PlayStation 2/3, Nintendo Ga
 
 &Additionally I was responsible for designing and maintaining build systems, development and deployment tools, and the cloud-based infrastructure backing for Bondi Labs' web applications, websites and other company services.\\ \\
  
-2011--2014 &{\bf Flight Centre Software Services} \textperiodcentered{} \textit{Senior Developer}\\
-&As part of the corporate travel team, I was responsible for the development and maintenance of a suite of corporate travel booking software used both internally at Flight Centre, and by over 2,500 companies throughout Australasia.\\
+2011--2014 &{\bf Flight Centre Software Services} \textperiodcentered{} \textit{Senior Developer}\\ \\
+&As part of the corporate travel team, I was responsible for the development and maintenance of a suite of corporate travel booking software used both internally at Flight Centre, and by over 2,500 companies throughout Australasia.\\ \\
 
-\pagebreak
 &\bf{E3/Portal}\\
 
-&These products were legacy Java enterprise web applications used for customer management, live travel booking, payments, itinerary services, reporting and messaging. They were J2EE applications running in WebLogic and Tomcat application servers, with JSP and raw HTML front ends, integrating with the Travelport Galileo TMS and a Sybase database fronted by JDBC.\\ \\
+&These products are legacy Java enterprise web applications used for customer management, live travel booking, payments, itinerary services, reporting and messaging. They are J2EE applications running in WebLogic and Tomcat application servers, with JSP and raw HTML front ends, integrating with the Travelport Galileo TMS and a Sybase database fronted by JDBC.\\ \\
 
 &In my role as a senior developer I worked to enhance the security and stability of the platforms, while adding new features and customisations to the existing offerings. In particular I was instrumental in the products achieving PCI/DSS compliance by identifying and remediating various security and data storage vulnerabilities across the platforms.\\ \\
 
@@ -96,7 +127,7 @@ Platforms&Linux, Windows, Amazon Web Services, Sony PlayStation 2/3, Nintendo Ga
 %2011 &{\bf Topcon Positioning Systems} \textit{Senior Programmer}\\ \\
 %&Made enhancements in {\Cplusplus} to an MFC-based embedded heavy machinery positioning and control system used by thousands of construction companies worldwide.\\ \\
 
-2005--2011 &{\bf THQ Studio Australia} \textperiodcentered{} \textit{Senior Programmer}\\
+2005--2011 &{\bf THQ Studio Australia} \textperiodcentered{} \textit{Programmer/Senior Programmer}\\ \\
 &I worked as part of a small team that developed a number of console games based on major licenses which sold millions of copies internationally. I have credited contributions on five published titles on the Sony PlayStation 2 and 3, Microsoft Xbox and Xbox 360, and the Nintendo GameCube and Wii.\\ \\
 
 &I designed and implemented a wide variety of game systems including cameras, save/load, profiles, user interface, character movement, navigation, front end, sound, editor and a number of complete mini games.\\ \\
@@ -105,10 +136,11 @@ Platforms&Linux, Windows, Amazon Web Services, Sony PlayStation 2/3, Nintendo Ga
 
 &All development was with {\Cplusplus} using proprietary and off the shelf libraries, with some PC tools implemented using the .NET framework.\\ \\
 
-2003--2005 &{\bf Oracle Corporation} \textperiodcentered{} \textit{Applications Engineer}\\
+2003--2005 &{\bf Oracle Corporation} \textperiodcentered{} \textit{Applications Engineer}\\ \\
 &I made critical repairs to a troubled offline sales application originally developed in Java and VB6. The primary focus of the work was ensuring that the Excel-based application synchronised in a secure and reliable manner with the Oracle Applications database.\\ \\
 
-&I also made enhancements and provided technical customer support for a J2EE application that provided a desktop interface using Microsoft Excel to allow for mass data entry into Oracle Applications database tables.\\
+&I also made enhancements and provided technical customer support for a J2EE application that provided a desktop interface using Microsoft Excel to allow for mass data entry into Oracle Applications database tables.
+\end{longtable}
 
 %
 % Not really relevant any more
@@ -118,7 +150,7 @@ Platforms&Linux, Windows, Amazon Web Services, Sony PlayStation 2/3, Nintendo Ga
 %
 %&Wrote an MP3 decoder in {\Cplusplus} for use on the PC and Sony PlayStation 2.
 
-\end{longtable}
+\pagebreak
 
 \section*{Education}
 \begin{longtable}{L!{\VRule}R}
@@ -142,18 +174,9 @@ Platforms&Linux, Windows, Amazon Web Services, Sony PlayStation 2/3, Nintendo Ga
 \end{longtable}
 
 \section*{Interests}
-Cycling, the environment and the natural world, functional programming, learning.
+The environment and the natural world, cycling, functional programming, fantasy literature, learning.
 
 \section*{References}
-\begin{longtable}{L!{\VRule}R}\
-Bondi Labs&{\bf Dave MacMinn} \textperiodcentered{} \textit{Former Studio Director}\\
-&dmacminn@hotmail.com\\
-&0406 522 652\\ \\
-
-Flight Centre&{\bf Scott Laporte} \textperiodcentered{} \textit{Former Team Leader}\\
-&scott.laporte@gmail.com\\
-&0421 128 197
-\end{longtable}
-
+Available upon request.
 
 \end{document}
